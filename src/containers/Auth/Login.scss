@@ -1,0 +1,68 @@
+@import '~bootstrap/scss/bootstrap';
+
+.login-background {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    height: 100vh;
+
+    .login-container {
+        padding: 15px;
+        width: 400px;
+        height: 100%;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 10px;
+
+        .login-content {
+
+            .text-login {
+                text-align: center;
+                font-weight: 600;
+                font-size: 24px;
+                padding-top: 10px;
+
+            }
+
+            .login-input {
+                margin: 10px 0;
+            }
+
+            .login-btn {
+                border-radius: 25px;
+                border: transparent;
+                height: 30px;
+                font-size: 20px;
+                color: white;
+                font-weight: 700;
+                background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            }
+
+            .social-login {
+                margin-top: 10px;
+                gap: 10px;
+
+                .google,
+                .facebook,
+                .twitter {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 30px;
+                    width: 50px;
+                    height: 50px;
+                    background: red;
+                    border-radius: 50%;
+                    color: white;
+                }
+
+                .facebook {
+                    background: #307aaf;
+                }
+
+                .twitter {
+                    background: #50abf1;
+                }
+            }
+        }
+    }
+}
