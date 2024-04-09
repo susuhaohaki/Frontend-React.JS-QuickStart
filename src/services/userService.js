@@ -1,7 +1,12 @@
+import { template } from "lodash";
 import axios from "../axios"
 
 const handleLoginAPI = (userEmail, userPassword) => {
     return axios.post('/api/login', { email: userEmail, password: userPassword });
 }
 
-export { handleLoginAPI }
+const getAllUsers = (inputId) => {
+    // template String
+    return axios.get(`/api/get-all-users?id=${inputId}`);
+}
+export { handleLoginAPI, getAllUsers }
