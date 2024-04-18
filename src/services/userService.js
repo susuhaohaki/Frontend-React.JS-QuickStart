@@ -11,7 +11,7 @@ const getAllUsers = (inputId) => {
 }
 
 const createNewUserService = (data) => {
-    console.log("check data from service", data)
+    // console.log("check data from service", data)
     return axios.post(`/api/create-new-user`, data);
 }
 
@@ -22,4 +22,7 @@ const deleteUserService = (userId) => {
         }
     });
 }
-export { handleLoginAPI, getAllUsers, createNewUserService, deleteUserService }
+const editUserService = (inputData) => {
+    return axios.put(`/api/edit-user`, inputData);
+}
+export { handleLoginAPI, getAllUsers, createNewUserService, deleteUserService, editUserService }
