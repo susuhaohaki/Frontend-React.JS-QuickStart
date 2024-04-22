@@ -2,12 +2,16 @@
     height: 60px;
     width: 100%;
     padding: 0 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
 
 
     .home-header-content {
         width: 100%;
         height: 100%;
         display: flex;
+        padding: 10px 0;
 
         .left-content {
             width: 25%;
@@ -27,7 +31,7 @@
 
             i {
                 font-size: 25px;
-                color: green;
+                color: gray;
                 cursor: pointer;
             }
         }
@@ -55,4 +59,108 @@
 
 
     }
+}
+
+.home-header-banner {
+    background: url(../../assets/header_bg.jpg) center center no-repeat;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 15px 0;
+    display: flex;
+    flex-direction: column;
+
+    .content-up {
+        height: 50%;
+
+        .title1,
+        .title2 {
+            font-size: 30px;
+            color: white;
+            text-shadow: 1px 1px 1px #333;
+        }
+
+        .title1 {
+            padding-top: 50px;
+            padding-bottom: 15px;
+        }
+
+        .title2 {
+            margin-bottom: 15px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            width: 360px;
+            border-radius: 30px;
+            align-items: center;
+            background: #f7d800;
+            padding: 0 10px;
+
+            i {
+                margin: 0 5px;
+            }
+
+            input {
+                height: 40px;
+                width: 360px;
+                background: transparent;
+                border: none;
+                outline: none;
+
+            }
+        }
+    }
+
+    .content-down {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .option {
+            display: flex;
+            justify-content: center;
+
+            .option-child {
+                height: 100px;
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .icon-child {
+                    background: white;
+                    width: 40px;
+                    height: 40px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin: 0 auto;
+
+                    i {
+                        color: #49bce2;
+                        font-size: 20px;
+                    }
+                }
+
+                .text-child {
+                    font-size: 15px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: #49bce2;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .option {}
 }
