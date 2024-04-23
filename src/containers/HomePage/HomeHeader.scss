@@ -57,15 +57,45 @@
             justify-content: center;
         }
 
+        .support {
+            padding-right: 50px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            i {
+                font-size: 15px;
+                margin-right: 5px;
+            }
+        }
+
+        .language-vi {
+            cursor: pointer;
+
+            &.active {
+                color: orange;
+            }
+        }
+
+        .language-en {
+            margin: 0 10px;
+            cursor: pointer;
+
+            &.active {
+                color: blue;
+            }
+        }
+
 
     }
 }
 
 .home-header-banner {
-    background: url(../../assets/header_bg.jpg) center center no-repeat;
+    background-image: url(../../assets/Group165.png), linear-gradient(rgba(126, 126, 126, 0.25), rgba(255, 255, 255, 0.1));
+    background-position: center;
+    background-repeat: no-repeat;
     height: 600px;
     background-size: cover;
-    background-position: center;
     text-align: center;
     padding-top: 15px 0;
     display: flex;
@@ -131,7 +161,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
 
                 .icon-child {
                     background: white;
